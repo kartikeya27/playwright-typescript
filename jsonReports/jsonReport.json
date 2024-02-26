@@ -1,0 +1,53 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="49.385421">
+<testsuite name="pomtest/addToCartUsingFixture.test.ts" timestamp="2024-02-11T04:21:45.476Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="3" failures="1" skipped="0" time="47.634" errors="0">
+<testcase name="Page object test demo › Register test_01" classname="pomtest/addToCartUsingFixture.test.ts" time="9.581">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/pomtest-addToCartUsingFixture-Page-object-test-demo-Register-test-01-chrome-latest-MacOS-Catalina-lambdatest/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Page object test demo › Login test_02" classname="pomtest/addToCartUsingFixture.test.ts" time="8.053">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/pomtest-addToCartUsingFixture-Page-object-test-demo-Login-test-02-chrome-latest-MacOS-Catalina-lambdatest/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Page object test demo › Add to cart test_03" classname="pomtest/addToCartUsingFixture.test.ts" time="30">
+<failure message="addToCartUsingFixture.test.ts:30:9 Add to cart test_03" type="FAILURE">
+<![CDATA[  [chrome:latest:MacOS Catalina@lambdatest] › pomtest/addToCartUsingFixture.test.ts:30:9 › Page object test demo › Add to cart test_03 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.waitFor: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('//a[.=\'View Cart \']') to be visible
+
+
+       at pages/specialPage.ts:23
+
+      21 |     async isToastVisible() {
+      22 |         const toast = this.page.locator("//a[.='View Cart ']");
+    > 23 |         await toast.waitFor({ state: "visible" });
+         |                     ^
+      24 |         return toast;// Add your code here
+      25 |     }
+      26 | }
+
+        at SpecialPage.isToastVisible (/Users/k-bhatt/playwright-typescript-framework/pages/specialPage.ts:23:21)
+        at /Users/k-bhatt/playwright-typescript-framework/pomtest/addToCartUsingFixture.test.ts:36:50
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/pomtest-addToCartUsingFixture-Page-object-test-demo-Add-to-cart-test-03-chrome-latest-MacOS-Catalina-lambdatest/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/pomtest-addToCartUsingFixture-Page-object-test-demo-Add-to-cart-test-03-chrome-latest-MacOS-Catalina-lambdatest/test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

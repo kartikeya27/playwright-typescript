@@ -1,0 +1,22 @@
+{
+  "name": "playwright-typescript-framework",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript Framework with playwright test runner",
+  "scripts": {
+    "test": "npx playwright test --project=chrome", 
+    "test1": "npx playwright test --project=\"chrome:latest:MacOS Catalina@Lambdatest\""
+  },
+  "keywords": [
+    "playwright test runner",
+    "playwright typescript framework"
+  ],
+  "author": "Kartikeya Bhatt",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.17"
+  },
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
