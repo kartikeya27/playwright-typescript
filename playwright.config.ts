@@ -57,7 +57,7 @@ const config: PlaywrightTestConfig = {
     //   wsEndpoint: `wss://cdp.lambdatest.com/playwright?capabilities=${encodeURIComponent(JSON.stringify(capabilities))}`
     // },  
     baseURL: 'https://ecommerce-playground.lambdatest.io/index.php?',
-    headless: false,
+    headless: true,
     screenshot: 'on',
     video: 'retain-on-failure',
     launchOptions: {
