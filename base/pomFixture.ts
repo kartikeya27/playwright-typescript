@@ -78,13 +78,10 @@ const testPages = baseTest.extend<pages>({
         await context.close();
         await browser.close();
     } else {
-        const browser = await chromium.launch();    
-        const context = await browser.newContext();
-        const page = await context.newPage(); 
+            const browser = await chromium.launch();    
+            const context = await browser.newContext();
+            const page = await context.newPage(); 
         await use(page);
-        await page.close();
-        await context.close();
-        await browser.close();
     }
 },     
 
