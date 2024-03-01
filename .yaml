@@ -3,16 +3,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
-        # Update to use actions/checkout@v4
+        uses: actions/checkout@v4 # Update to use actions/checkout@v4
       - name: Setup Node.js
-        uses: actions/setup-node@v4
-        # Update to use actions/setup-node@v4
+        uses: actions/setup-node@v4 # Update to use actions/setup-node@v4
         with:
           node-version: '20'
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        # Update to use actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4 # Update to use actions/upload-artifact@v4
         with:
           name: my-artifact
           path: path/to/artifact
